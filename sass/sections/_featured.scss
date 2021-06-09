@@ -1,0 +1,44 @@
+section.featured {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: $white;
+    background-image: linear-gradient(to top, #1b1b1b 0%, #373737 100%); 
+    
+   @media (max-width: $md) {
+       display: block;
+       
+   }
+    .featured-item {
+        margin-top: -150px;
+        z-index: 1;
+        
+
+        @media (max-width: $lg) {
+            padding: 15px;
+            margin-top: 0;
+        }
+        
+        p {
+            max-width: 300px;
+        }
+        img {
+            width: 450px;
+            height: 350px;
+            
+            @media (max-width: 1500px) {
+                width: 100%;
+            }
+            @media (max-width: $md) {
+                width: 200px;
+                height: 150px;
+                display: block;
+                margin: auto;
+            }
+               
+            }
+        }
+
+    }
+    
+

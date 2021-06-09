@@ -1,0 +1,108 @@
+.product-hero {
+    background-image: url("../img/keyboard3.png");
+    background-size: cover;
+    min-height: 420px;
+    margin-top: 40px;
+    padding-top: 150px;
+
+    h1, h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+    }
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 92px;
+        font-weight: 500;
+
+    }
+}
+.product-list {
+    color: $white;
+    padding-top: 70px;
+    
+    .product-filter {
+        list-style: none;
+        text-align: center;
+        padding-top: 50px;
+        .active{
+            background-color: #f2f2f2;
+            color: #1c1c1c;
+        }
+    
+        li {
+            display: inline-block;
+            background-color: $dark-gray;
+            color: $filter-gray;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-left: 0 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                color: #f2f2f2;
+                background-color: #333;
+                transition: 0.3s;
+            }
+            
+
+        }
+    }
+    .product-desc {
+        font-weight: 300;
+        font-size: 18px;
+        color: $white;
+        max-width: 750px;
+        text-align: center;
+        margin: auto;
+    }
+    .product-wraper {
+        padding-top: 100px;
+        display: flex;
+        .product-col {
+            width: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .product-shop-list {
+            background: radial-gradient(ellipse at center, rgba(48,48,48,1) 0%, rgba(24,24,24,1) 100%);
+            height: 520px;
+            position: relative;
+            &:hover {
+                img {
+                    position: relative;
+                    top: -20px;
+                    transition: 0.3s;
+                }
+            }
+            img {
+                max-width: 380px;
+                display: block;
+                margin: auto;
+            }
+            
+            .product-shop-desc {
+                color: $white;
+                padding-left: 25px;
+                padding-right: 25px;
+                position: absolute;
+                bottom: 25px;
+
+               
+                h3, p {
+                    font-weight: 400;
+
+                }
+                h3 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
